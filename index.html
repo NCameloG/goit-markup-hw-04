@@ -25,11 +25,13 @@
               </div>
               <div class="contactBox">
                 <ul class="list navList">
-                  <li>
-                    <svg> <use href="./images/icons.svg#icon-telefono"></use></svg>
+                  <li class="contactItem">
+                    <svg class="contactMail"> <use href="./images/icons.svg#icon-sobre"></use></svg>
                     <a href="mailto:info@devstudio.com" class="navContact link">info@devstudio.com</a>
                   </li>
-                  <li><a href="tel:+52555296000" class="navContact link">+525 555 296 000</a></li>
+                  <li class="contactItem">
+                    <svg class="contactPhone"><use href="./images/icons.svg#icon-telefono"></use></svg>
+                    <a href="tel:+52555296000" class="navContact link">+525 555 296 000</a></li>
                 </ul>
               </div>
             </div>
@@ -46,38 +48,66 @@
       <section class="mainValues section">
         <div class="container">
           <ul class="list cardSet">
-            <li>
-              <h3 class="detail">ATENCION A LOS DETALLES</h3>
-              <p class="content">
-                Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
-                una solución a su medida.
-              </p>
+            <li class="valueItem">
+              <div class="iconBack">
+                <svg class="valueIcon">
+                  <use href="./images/icons.svg#icon-antena-1"></use>
+                </svg>
+              </div>
+              <div class="valueText">
+                <h3 class="detail">ATENCION A LOS DETALLES</h3>
+                <p class="content">
+                  Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
+                  una solución a su medida.
+                </p>
+              </div>
+              </li>
+              <li class="valueItem">
+                <div class="iconBack">
+                  <svg class="valueIcon">
+                    <use href="./images/icons.svg#icon-reloj-1"></use>
+                  </svg>
+                </div>
+                <div class="valueText">
+                  <h3 class="detail">PUNTUALIDAD</h3>
+                  <p class="content">
+                    Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+                    empresa: respetar su tiempo y respetar los plazos acordados.
+                  </p>
+                </div>
             </li>
-            <li>
-              <h3 class="detail">PUNTUALIDAD</h3>
-              <p class="content">
-                Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
-                empresa: respetar su tiempo y respetar los plazos acordados.
-              </p>
-            </li>
-            <li>
+            <li class="valueItem">
+              <div class="iconBack">
+                <svg class="valueIcon">
+                  <use href="./images/icons.svg#icon-diagrama-1"></use>
+                </svg>
+              </div>
+              <div class="valueText">
               <h3 class="detail">PLANIFICACIÓN</h3>
               <p class="content">
                 Usted podrá observar y participar en cada fase del desarrollo y aplicación de
                 soluciones.
               </p>
+            </div>
             </li>
-            <li>
+            <li class="valueItem">
+              <div class="iconBack">
+                <svg class="valueIcon">
+                  <use href="./images/icons.svg#icon-astronauta-1"></use>
+                </svg>
+              </div>
+              <div class="valueText">
               <h3 class="detail">TEGNOLOGÍA MODERNA</h3>
               <p class="content">
                 Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
                 simplificar los procesos laborales.
               </p>
+            </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="mainAbout section">
+      <section class="section">
         <div class="container">
           <h2 class="subtitle">A qué nos dedicamos</h2>
           <ul class="list about">
@@ -94,7 +124,7 @@
         </div>
       </section>
       <section id="mainTeam" class="team section">
-        <div class="container">
+        <div class="container mainTeam">
           <h2 class="subtitle">Nuestro equipo</h2>
           <ul class="list cardSet">
             <li class="teamMember memberCard">
@@ -102,7 +132,7 @@
               <div class="teamContent">
                 <h3 class="teamName">Andrés Cubo</h3>
               <p class="teamJob">Diseñador de Productos</p>
-              </div>
+            </div>
             </li>
             <li class="teamMember memberCard">
               <img class="teamPhoto img" src="./images/main/carladf.jpg" alt="Carla" width="270" height="260" />
@@ -123,7 +153,64 @@
               <div class="teamContent">
               <h3 class="teamName">Pablo Mijangos</h3>
               <p class="teamJob">Diseñador IU</p>
+              <ul class="list teamSocial">
+                <li class="teamIcons">
+                  <svg class="teamIcon"><a href="#"></a>
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="teamIcons">
+                  <svg class="teamIcon"><a href="#"></a>
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="teamIcons">
+                  <svg class="teamIcon"><a href="#"></a>
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg></li>
+                <li class="teamIcons">
+                  <svg class="teamIcon"><a href="#"></a>
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg></li>
+              </ul>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="mainClients" class="section">
+        <div class="container mainClients">
+          <h2 class="subtitle">Clientes Regulares</h2>
+          <ul class="list clients">
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-1"></use>
+              </svg>
+            </li>
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-2"></use>
+              </svg>
+            </li>
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-3"></use>
+              </svg>
+            </li>
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-4"></use>
+              </svg>
+            </li>
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-5"></use>
+              </svg>
+            </li>
+            <li class="client">
+              <svg class="logoClient">
+                <use href="./images/icons.svg#icon-cliente-6"></use>
+              </svg>
             </li>
           </ul>
         </div>

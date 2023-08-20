@@ -32,25 +32,18 @@ body {
   color: var(--main-color);
 }
 .navList {
-  gap: 50px;
+  gap: 30px;
   padding: 0;
   display: flex;
 }
-.navLink:active .navLink:focus,
-.navLink:hover {
-  color: var(--selected-color);
-}
-.navContact {
-  color: rgb(117, 117, 117);
-}
 .navSection {
-  gap: 50px;
+  gap: 93px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
 .navBox {
-  gap: 344px;
+  gap: 306px;
   padding: 32px;
   display: flex;
   justify-content: space-between;
@@ -61,13 +54,35 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.contactIcon{
- margin: auto;
- gap: 0; 
+.navContact {
+  color: rgb(117, 117, 117);
 }
-/* HEADER */
+.contactItem{
+  gap: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color:rgb(117, 117, 117);
+  fill: rgb(117, 117, 117);
+}
+.contactPhone{
+  width: 10px;
+  height: 16px;
+}
+.contactMail{
+  width: 16px;
+  height: 12px;
+}
+.contactItem:hover svg,
+.contactItem:focus svg,
+.contactItem:active svg{
+  cursor: pointer;
+  fill: var(--selected-color);
+}
+/* -----HEADER----- */
 
-/* INDEX */
+/* -----INDEX----- */
 
 /* MAIN */
 .main {
@@ -115,13 +130,36 @@ body {
 /* MAIN */
 /* Values */
 .mainValues {
-  margin: auto;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+
 }
 .mainValues li {
   flex-basis: calc((100% - 30px * 3) / 4);
+  align-items:flex-start;
+}
+
+.valueItem{
+  gap: 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.valuetext{
+  gap: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.iconBack{
+  border-radius: 4px;
+  padding: 25px 100px;
+  background: #F5F4FA;
+}
+.valueIcon{
+  width:70px;
+  height: 70px;
 }
 
 /* Values */
@@ -129,6 +167,7 @@ body {
 /* ABOUT */
 .about {
   gap: 30px;
+  padding: 0;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -136,6 +175,12 @@ body {
 /* ABOUT */
 
 /* TEAM */
+.mainTeam{
+  gap: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 .team {
   background-color: rgb(245, 244, 250);
 }
@@ -148,6 +193,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin: 0;
 }
 .teamJob {
   font-size: 16px;
@@ -155,6 +201,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: rgb(117, 117, 117);
+  margin: 0;
 }
 .memberCard {
   border-radius: 0px 0px 4px 4px;
@@ -162,8 +209,62 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
+.teamContent{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.teamSocial{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.teamIcons{
+  display: flex;
+  fill:rgba(175, 177, 184, 1) ;
+  padding: 12px;
+  justify-content: center;
+}
+.teamIcon{
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
 /* TEAM */
+
+/* CLIENTS */
+.mainClients{
+  gap: 44px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.clients {
+  gap: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.client{
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  padding: 14px 32px;
+}
+.client:hover{
+border: 1px solid var(--selected-color);
+}
+.client:hover svg{
+  fill: var(--selected-color);
+}
+.logoClient{
+  width: 106px;
+  height: 53px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+
 
 /* ------INDEX----- */
 
@@ -304,19 +405,21 @@ body {
 /*GENERAL CONTENT*/
 .container {
   padding: 0;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 .section {
-  padding: 94px 0;
+  padding: 94px;
 }
 .current {
   color: var(--selected-color);
 }
 .list {
   list-style: none;
+  margin: 0;
 }
 .subtitle {
+  margin: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -324,12 +427,14 @@ body {
   text-align: center;
 }
 .detail {
+  margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.21;
   letter-spacing: 0.03em;
 }
 .content {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -348,14 +453,12 @@ body {
 }
 .link {
   text-decoration: none;
-
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   color: var(--selected-color);
 }
 .cardSet {
@@ -370,4 +473,5 @@ body {
 .img {
   width: 100%;
   height: auto;
+  object-fit: c;
 }
