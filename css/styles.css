@@ -175,17 +175,20 @@ body {
 /* ABOUT */
 
 /* TEAM */
-.mainTeam{
-  gap: 50px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
 .team {
   background-color: rgb(245, 244, 250);
 }
 .teamMember {
+  gap: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
   background-color: rgb(255, 255, 255, 1);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 10px) / 4);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .teamName {
   font-size: 16px;
@@ -204,34 +207,41 @@ body {
   margin: 0;
 }
 .memberCard {
-  border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 3 * 10px) / 4);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .teamContent{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contentText{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .teamSocial{
   gap: 10px;
+  padding: 0px 32px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
 .teamIcons{
+  background-image: url(../images/iconos/background-social.svg) ;
   display: flex;
   fill:rgba(175, 177, 184, 1) ;
   padding: 12px;
   justify-content: center;
 }
-.teamIcon{
-  margin: 0;
-  width: 20px;
-  height: 20px;
+.teamIcons:hover svg,
+.teamIcons:hover{
+  fill: rgba(255, 255, 255, 1);
+  background-image: url(../images/iconos/background-social-hover.svg);
+  cursor: pointer;
 }
+
 /* TEAM */
 
 /* CLIENTS */
@@ -366,8 +376,22 @@ border: 1px solid var(--selected-color);
 .socialList {
   gap: 10px;
   padding: 0;
-  max-width: 206px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialIcons{
+  background-image: url(../images/iconos/background-footer-social.svg) ;
+  display: flex;
+  fill:rgba(255, 255, 255, 1) ;
+  padding: 12px;
+  justify-content: center;
+}
+.socialIcons:hover svg,
+.socialIcons:hover{
+  fill: rgba(255, 255, 255, 1);
+  background-image: url(../images/iconos/background-social-hover.svg);
+  cursor: pointer;
 }
 .ubication {
   display: flex;
@@ -474,4 +498,9 @@ border: 1px solid var(--selected-color);
   width: 100%;
   height: auto;
   object-fit: c;
+}
+.socialIcon{
+  margin: 0;
+  width: 20px;
+  height: 20px;
 }
