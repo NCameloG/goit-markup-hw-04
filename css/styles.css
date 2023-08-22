@@ -24,7 +24,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: right;
-  text-decoration: none;
   color: var(--main-color);
   font-family: var(--secondary-font);
 }
@@ -56,15 +55,12 @@ body {
 }
 .navContact {
   color: rgb(117, 117, 117);
-}
-.contactItem{
+  fill: rgb(117, 117, 117);
   gap: 10px;
   margin: auto;
   display: flex;
   align-items: center;
   align-content: center;
-  color:rgb(117, 117, 117);
-  fill: rgb(117, 117, 117);
 }
 .contactPhone{
   width: 10px;
@@ -74,12 +70,7 @@ body {
   width: 16px;
   height: 12px;
 }
-.contactItem:hover svg,
-.contactItem:focus svg,
-.contactItem:active svg{
-  cursor: pointer;
-  fill: var(--selected-color);
-}
+
 /* -----HEADER----- */
 
 /* -----INDEX----- */
@@ -119,7 +110,7 @@ body {
   border: none;
   cursor: pointer;
   margin: auto;
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: rgb(33, 150, 243);
 }
 .mainButton:hover,
@@ -227,21 +218,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:white;
 }
-.teamIcons{
-  background-image: url(../images/iconos/background-social.svg) ;
-  display: flex;
-  fill:rgba(175, 177, 184, 1) ;
-  padding: 12px;
-  justify-content: center;
-}
-.teamIcons:hover svg,
-.teamIcons:hover{
-  fill: rgba(255, 255, 255, 1);
-  background-image: url(../images/iconos/background-social-hover.svg);
-  cursor: pointer;
-}
-
 /* TEAM */
 
 /* CLIENTS */
@@ -264,9 +242,11 @@ body {
 }
 .client:hover{
 border: 1px solid var(--selected-color);
+cursor: pointer;
 }
 .client:hover svg{
   fill: var(--selected-color);
+  cursor: pointer;
 }
 .logoClient{
   width: 106px;
@@ -307,7 +287,7 @@ border: 1px solid var(--selected-color);
 .filterClass:focus,
 .filterClass:active,
 .filterCurrent {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: var(--selected-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -366,6 +346,9 @@ border: 1px solid var(--selected-color);
   display: flex;
   flex-direction: column;
 }
+.footerSocialIcons{
+  background-color: rgba(255, 255, 255, 0.10);
+}
 .detailList {
   gap: 9px;
   padding: 0;
@@ -380,32 +363,19 @@ border: 1px solid var(--selected-color);
   align-items: center;
   justify-content: center;
 }
-.socialIcons{
-  background-image: url(../images/iconos/background-footer-social.svg) ;
-  display: flex;
-  fill:rgba(255, 255, 255, 1) ;
-  padding: 12px;
-  justify-content: center;
-}
-.socialIcons:hover svg,
-.socialIcons:hover{
-  fill: rgba(255, 255, 255, 1);
-  background-image: url(../images/iconos/background-social-hover.svg);
-  cursor: pointer;
-}
 .ubication {
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .findUs {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.21;
   letter-spacing: 0.03em;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .socialMedia {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .footer {
   padding: 45px;
@@ -417,8 +387,7 @@ border: 1px solid var(--selected-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: right;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: var(--secondary-font);
 }
 .footerContact {
@@ -427,6 +396,14 @@ border: 1px solid var(--selected-color);
 /* FOOTER */
 
 /*GENERAL CONTENT*/
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+svg{
+  fill: currentColor;
+}
 .container {
   padding: 0;
   max-width: 1200px;
@@ -471,12 +448,10 @@ border: 1px solid var(--selected-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   align-items: flex-end;
-  text-decoration: none;
   color: var(--selected-color);
   font-family: var(--secondary-font);
 }
 .link {
-  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
@@ -484,6 +459,7 @@ border: 1px solid var(--selected-color);
 }
 .link:hover, .link:focus {
   color: var(--selected-color);
+  fill: var(--selected-color);
 }
 .cardSet {
   gap: 10px;
@@ -503,4 +479,19 @@ border: 1px solid var(--selected-color);
   margin: 0;
   width: 20px;
   height: 20px;
+}
+.socialIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: rgba(175, 177, 184, 1);
+
+}
+.socialIcons:hover{
+  color: white;
+  background-color: var(--selected-color);
 }
